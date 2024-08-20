@@ -1,0 +1,5 @@
+cal=input().split("-")
+m=int(cal[0])
+d=int(cal[1])
+y=int(cal[2])
+print(f"{y}.{m}.{d}")
