@@ -1,0 +1,11 @@
+ch = input()
+if ch =='S':
+    print("Superior")
+elif ch =='A':
+    print("Excellent")
+elif ch =='C':
+    print("Usually")
+elif ch =='D':
+    print("Effort") 
+else:
+    print("Failure")
