@@ -1,8 +1,8 @@
 n=int(input())
-if n==1 or n%2 ==0:
-    print(31)
+if n==2:
+    print(28)
 else:
-    if n!=2:
-        print(30)
+    if n%2 ==0 or n==1:
+        print(31)
     else:
-        print(28)
+        print(30)
