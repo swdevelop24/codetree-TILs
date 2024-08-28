@@ -1,27 +1,12 @@
-cl=0
-hall=0
-toil=0
-
 n=int(input())
-for num in range(n):
-    if num%2==0:
-        cl+=1
-    if num%3==0:
-        hall+=1
-    if toil%12==0:
-        toil+=1
-    if num%2==0 and num%3==0 and toil%12!=0:
-        cl-=1
-        hall+=1
-    if num%2==0 and num%3!=0 and toil%12==0:
-        toil+=1
-        cl-=1
-    if num%2!=0 and num%3==0 and toil%12==0:
-        toil+=1
-        hall-=1
-    if num%2==0 and num%3==0 and toil%12==0:
-        toil+=1
-        hall-=1
-        cl-=1
+cnt2, cnt3, cnt12=0,0,0
 
-print(cl, hall, toil, sep=' ')
+for num in range(1, n+1):
+    if num%12==0:
+        cnt12+=1
+    elif num%3==0:
+        cnt3+=1
+    elif num%2==0:
+        cnt2+=1
+
+print(cnt2,cnt3, cnt12)
