@@ -5,5 +5,5 @@ while True:
         continue
     print(num//2)
     cnt+=1
-    if cnt>=3:
+    if cnt==3:
         break
