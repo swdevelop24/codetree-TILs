@@ -1,8 +1,9 @@
-t=0
+cnt=0
 while True:
-    inp =int(input())
-    if inp%2==0 and t<3:    
-        print(inp//2) 
-        t+=1
-    if t>=3:
+    num=int(input())
+    if num%2==1:
+        continue
+    print(num//2)
+    cnt+=1
+    if cnt>=3:
         break
