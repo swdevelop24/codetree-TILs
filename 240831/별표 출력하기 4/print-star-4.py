@@ -1,0 +1,11 @@
+n=int(input())
+
+for y in range(n):
+    for x in range(n-y):
+        print("*", end=" ")
+    print()
+
+for y in range(n-2,-1,-1):
+    for x in range(n-y):
+        print("*", end=" ")
+    print()
