@@ -19,4 +19,4 @@ else:
         my_sum+=arr[idx]
     avg = my_sum/len(arr)
 
-print(f"{my_sum} {avg}")
+print(f"{my_sum} {avg:.1f}")
