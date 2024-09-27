@@ -17,6 +17,6 @@ if above:
 else:
     for idx in range(len(arr)-1):
         my_sum+=arr[idx]
-    avg = my_sum/len(arr)
+    avg = my_sum/(len(arr)-1)
 
 print(f"{my_sum} {avg:.1f}")
