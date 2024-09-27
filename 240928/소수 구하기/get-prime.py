@@ -1,10 +1,9 @@
 n = int(input())
+for i in range(2, n+1): 
+    isprime = True
 
-for i in range(2,n+1):
-    if n%i == 0:
-        if n == 2 or n == 3:
-            print(i, end=' ') 
-        else:
-            continue
-    else:
-        print(i, end=' ')
+    for x in range(2, i):
+        if i % x == 0:
+            isprime = False
+    if isprime:
+        print(i, end=" ")
