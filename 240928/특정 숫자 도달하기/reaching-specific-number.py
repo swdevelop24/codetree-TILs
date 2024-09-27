@@ -1,22 +1,11 @@
 arr=list(map(int, input().split())) 
 
-above= False
-idx =0  
-for i in range(len(arr)):
-    if arr[i] >= 250:
-        above = True
-        idx =i 
+sum_v=0
+cnt=0 
+for elem in arr:
+    if elem >=250:
         break
-
-my_sum=0
-avg=0 
-if above: 
-    for i in range(idx):
-        my_sum+=arr[i]
-    avg = my_sum/idx
-else:
-    for idx in range(len(arr)-1):
-        my_sum+=arr[idx]
-    avg = my_sum/(len(arr)-1)
-
-print(f"{my_sum} {avg:.1f}")
+    sum_v += elem
+    cnt+=1 
+avg = sum_v/cnt 
+print(f"{sum_v} {avg:.1f}")
