@@ -1,18 +1,10 @@
 points=list(map(int, input().split()))
+cnt=0 
 
-iszero=False
-idx=0 
-for i in range(len(points)):
-    if points[i] == 0:
-        iszero = True
-        idx=i-1
+for elem in points:
+    if elem == 0:
         break
-    
+    cnt+=1
 
-if iszero: 
-    for x in range(idx, -1,-1):
-        print(points[x], end=" ")
-    
-else:
-    for x in range(len(points)-1,-1,-1):
-        print(points[x], end=" ")
+for i in range(cnt-1, -1, -1):
+    print(points[i], end=' ')
