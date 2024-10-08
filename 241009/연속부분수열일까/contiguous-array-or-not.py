@@ -16,8 +16,9 @@ else:
     print("No")
 ''' 
 
-flag=True
+
 for i in range(n1):    
+    flag=True
     for x in range(n2):
         if i+x >= n1:
             flag=False
@@ -28,8 +29,8 @@ for i in range(n1):
             break
         
         
-    if not flag:
-        print("No")
+    if flag:
+        print("Yes")
         sys.exit()
 
-print("Yes")
+print("No")
