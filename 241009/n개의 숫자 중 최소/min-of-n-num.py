@@ -8,6 +8,6 @@ mini = sys.maxsize
 for num in arr:
     if mini >= num:
         mini = num
-        cnt[mini]+=1
+        cnt[num]+=1
 
 print(mini, cnt[mini])
