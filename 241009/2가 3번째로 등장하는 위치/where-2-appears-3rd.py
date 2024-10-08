@@ -9,6 +9,5 @@ for i, num in enumerate(arr):
         cnt+=1
     if cnt==3:
         idx =i 
+        print(idx+1)
         break
-
-print(idx+1)
