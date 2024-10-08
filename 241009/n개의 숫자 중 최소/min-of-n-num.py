@@ -5,7 +5,7 @@ arr=list(map(int, input().split()))
 
 cnt=0 
 mini = arr[0]
-for num in arr[1:]:
+for num in range(1, n):
     if mini > num:
         mini = num
         cnt=1
