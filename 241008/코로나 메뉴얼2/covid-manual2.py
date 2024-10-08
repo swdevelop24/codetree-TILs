@@ -1,20 +1,21 @@
-cnt=[0]*4
+cnt=[0]*5
+
 for _ in range(3):
-    arr = input().split()
-    a=arr[0]
-    b=int(arr[1])
+    a,b = input().split()
+    b=int(b)
 
     if a == 'Y' and b>=37:
-        cnt[0]+=1
+        type=1        
     elif a == 'N' and b>=37:
-        cnt[1] +=1
+        type=2
     elif a=='Y' and b<37:
-        cnt[2] +=1
+        type=3
     else:
-        cnt[3]+=1
+        type=4
+    cnt[type]+=1 
 
-for i in range(4):
+for i in range(1,5):
     print(cnt[i], end=' ')
 
-if cnt[0] >=2:
+if cnt[1] >=2:
     print('E')
