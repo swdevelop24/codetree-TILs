@@ -1,3 +1,4 @@
+import sys
 n1, n2 = map(int, input().split())
 arr = list(map(int, input().split()))
 brr = list(map(int, input().split()))
@@ -18,18 +19,17 @@ else:
 flag = True
 for i in range(len(arr)):
     for x in range(len(brr)):
+        if i+x >= n1:
+            flag=False
+            break
+
         if arr[i+x] != brr[x]:
             flag=False
             break
-        if i+x >= len(arr):
-            flag=False
-            break
         
-    if not flag:
-        break 
+        
+    if flag:
+        print("Yes")
+        sys.exit()
 
-
-if flag:
-    print("Yes")
-else:
-    print("No")
+print("No")
