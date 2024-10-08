@@ -1,7 +1,7 @@
 arr=input().split()
 a,b = int(arr[0]), int(arr[1])
 
-
+newlist=[]
 #newlist=[a,b]
 newlist.append(a)
 newlist.append(b)
