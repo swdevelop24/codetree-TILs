@@ -6,7 +6,7 @@ for num in arr:
     cnt[num] +=1 
 
 maxi=0
-ex=0 
+ex=1 
 for i in range(n):
     if cnt[arr[i]] >=2:
         continue
