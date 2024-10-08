@@ -14,7 +14,4 @@ for i in range(n):
         maxi = arr[i]
         ex=0
 
-if not ex:
-    print(maxi)
-else:
-    print(ex)
+print(maxi)
