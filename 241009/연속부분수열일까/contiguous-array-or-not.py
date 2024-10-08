@@ -16,9 +16,10 @@ else:
     print("No")
 ''' 
 
-flag = True
-for i in range(len(arr)):
-    for x in range(len(brr)):
+
+for i in range(n1):
+    flag = True
+    for x in range(n2):
         if i+x >= n1:
             flag=False
             break
