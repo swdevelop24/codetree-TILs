@@ -4,8 +4,8 @@ arr=list(map(int, input().split()))
 
 
 cnt=0 
-mini = sys.maxsize 
-for num in arr:
+mini = arr[0]
+for num in arr[1:]:
     if mini > num:
         mini = num
         cnt=1
