@@ -16,4 +16,4 @@ for _ in range(q):
         b=type[2]
         for i in range(a-1,b):
             print(arr[i], end=' ')
-        print()
+        print() #잊지 말기 !
