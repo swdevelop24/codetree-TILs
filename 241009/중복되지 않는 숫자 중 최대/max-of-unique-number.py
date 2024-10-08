@@ -3,20 +3,18 @@ arr=list(map(int, input().split()))
 cnt=[0]*1001
 
 for num in arr:
-    cnt[num] +=1 
+    cnt[num] +=1
 
-maxi=0
-ex=1 
+maxi=-1
+ex=1
 for i in range(n):
-    if cnt[arr[i]] >=2:
+    if cnt[arr[i]] >= 2:
         continue
-    if maxi <= arr[i]:
+    if maxi < arr[i]:
         maxi = arr[i]
-        ex=0 
-    else:
-        ex=1 
+        ex=0
 
-if ex:
-    print(-1)
-else:
-    print(maxi)
+    if not ex:
+        print(maxi)
+    else:
+        print(ex)
