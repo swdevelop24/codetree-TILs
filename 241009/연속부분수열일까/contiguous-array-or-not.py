@@ -16,7 +16,7 @@ else:
     print("No")
 ''' 
 
-
+'''
 for i in range(n1):    
     flag=True
     for x in range(n2):
@@ -34,3 +34,28 @@ for i in range(n1):
         sys.exit()
 
 print("No")
+'''
+
+n1 = len(arr)
+n2 = len(brr)
+found = False
+
+for i in range(n1):    
+    flag = True
+    for x in range(n2):
+        if i + x >= n1:
+            flag = False
+            break
+
+        if arr[i + x] != brr[x]:
+            flag = False
+            break
+
+    if flag:
+        found = True
+        break
+
+if found:
+    print("Yes")
+else:
+    print("No")
