@@ -12,6 +12,7 @@ for _ in range(q):
             print(0)
             
     else:
-        for i, num in enumerate(arr):
-            if i >= type[1]-1 and i <=type[2]-1:
-                print(num, end=' ')
+        a=type[1]
+        b=type[2]
+        for i in range(a-1,b):
+            print(arr[i], end=' ')
