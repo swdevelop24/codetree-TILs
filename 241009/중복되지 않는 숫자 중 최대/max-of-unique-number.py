@@ -10,7 +10,7 @@ ex=1
 for i in range(n):
     if cnt[arr[i]] >=2:
         continue
-    if maxi < arr[i]:
+    if maxi <= arr[i]:
         maxi = arr[i]
         ex=0 
     else:
