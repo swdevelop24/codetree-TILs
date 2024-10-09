@@ -18,3 +18,11 @@ for row in arr:
     for ele in row:
         print(ele, end= ' ')
     print()
+
+''' 
+or 
+for row in range(n):
+    for col in range(m):
+        print(answer[row][col], end = ' ')
+    print()
+'''
