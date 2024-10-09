@@ -1,6 +1,7 @@
-arr=[[1,2,3],[4,5,6],[7,8,9]]
+arr=[list(map(int, input().split())) for _ in range(3)]
+input()
 
-brr=[[2,3,4],[5,6,7],[8,9,10]]
+brr=[list(map(int, input().split())) for _ in range(3)]
 
 crr=[
     [0 for _ in range(3)]
