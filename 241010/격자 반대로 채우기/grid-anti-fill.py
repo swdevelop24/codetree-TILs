@@ -18,3 +18,8 @@ for row in arr:
     for elem in row:
         print(elem, end=' ')
     print()
+
+'''
+ if (n - 1 - col) % 2 == 0:
+        # 이 케이스에는 아래에서 위로 값을 채워줌
+'''
