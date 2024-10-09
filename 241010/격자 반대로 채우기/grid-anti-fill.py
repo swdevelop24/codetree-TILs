@@ -2,8 +2,9 @@ n = int(input())
 arr = [[0] * n for _ in range(n)]
 num = 1
 
+det = 0
 for col in range(n - 1, -1, -1):
-    if col % 2 == 1:
+    if det % 2 == 0: 
         for row in range(n - 1, -1, -1):
             arr[row][col] = num
             num += 1
@@ -11,6 +12,7 @@ for col in range(n - 1, -1, -1):
         for row in range(n):
             arr[row][col] = num
             num += 1
+    det+=1 
 
 for row in arr:
     for elem in row:
