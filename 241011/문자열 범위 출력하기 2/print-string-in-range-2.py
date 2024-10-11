@@ -9,5 +9,5 @@ cnt=0
 for x in range(len(arr)-1,-1, -1):
     if cnt >=n:
         break
-    print(arr[x], end=' ')
+    print(arr[x], end='')
     cnt+=1
