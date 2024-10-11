@@ -8,8 +8,7 @@ cnt=0
 cnta=0
 for ele in arr:
     cnt+=len(ele)
-    for x in range(len(ele)):
-        if ele[x] == 'a':
-            cnta+=1
+    if ele[0] == 'a':
+        cnta+=1
 
 print(cnt, cnta)
