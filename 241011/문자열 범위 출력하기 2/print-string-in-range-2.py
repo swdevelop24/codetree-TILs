@@ -1,5 +1,9 @@
 arr = input()
 n =int(input())
 
-for x in range(len(arr)-1,len(arr)-1-n, -1):
+num = len(arr)-1-n
+if num < 0:
+    num=1
+
+for x in range(len(arr)-1,num, -1):
     print(arr[x], end='')
