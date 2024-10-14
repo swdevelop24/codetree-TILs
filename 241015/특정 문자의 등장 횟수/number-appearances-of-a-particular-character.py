@@ -13,3 +13,11 @@ for i in range(alen):
         ebcnt+=1
 
 print(eecnt, ebcnt)
+
+'''
+for i in range(0, leng - 1):
+	if string[i] == 'e' and string[i + 1] == 'e':
+		cnt1 += 1
+	if string[i] == 'e' and string[i + 1] == 'b':
+		cnt2 += 1
+'''
