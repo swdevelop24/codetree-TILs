@@ -5,8 +5,8 @@ for x in range(q):
     arr = input().split()
     arr[0] =int(arr[0])
     if arr[0]==1:
-        ath = int(arr[1])
-        bth = int(arr[2])
+        ath = int(arr[1])-1
+        bth = int(arr[2])-1
         string = string[:ath] + string[bth] + string[ath+1:bth] + string[ath] + string[bth+1:]
     else:
         string=list(string)
