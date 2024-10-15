@@ -1,4 +1,4 @@
-arr, brr = tuple(input().split()) 
+arr, brr = input().split() 
 
 
 crr=arr[:2] + brr[2:]
