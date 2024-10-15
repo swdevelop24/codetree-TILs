@@ -34,7 +34,7 @@ for i in range(input_len):
             is_matched = False
     
     if is_matched:
-         # 모든 문자에 대하여 매칭이 된 경우:
+         # 모든 문자에 대하여 매칭
         print(i)
         sys.exit(0)
 
