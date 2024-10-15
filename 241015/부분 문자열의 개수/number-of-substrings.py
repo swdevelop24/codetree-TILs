@@ -1,17 +1,16 @@
-arr=input()
-brr=input()
+a,b = input(), input()
+idx=-1 
 
-cnt=0
-idx=0
+alen=len(a)
+blen=len(b)
+cnt=0 
 
-
-while idx <len(arr):
-    if arr[idx:].find(brr) == -1:
-        cnt=0
-        break
-    else:
+for i in range(alen):
+    if a[i:i+blen] == b:
+        idx = i 
         cnt+=1
-        idx = arr[idx:].find(brr)
-        idx = idx+1
 
-print(cnt)
+if idx ==-1:
+    print(0)
+else:
+    print(cnt)
