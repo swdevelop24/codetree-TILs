@@ -4,8 +4,9 @@ order=input()
 for x in range(len(order)):
     #shift to the left 
     if order[x] =='L':
+        
         temp = arr[0]
-        arr=arr[1:len(arr)] + temp 
+        arr=arr[1:] + temp 
     
 
     else:
