@@ -21,6 +21,7 @@ sum2 = b[:blast]
 print(int(sum1) + int(sum2))
 
 #에지 케이스에 유의하기 (전부다 디짓인 경우 )
+
 '''
 idx1 = 0
 idx2 = 0
