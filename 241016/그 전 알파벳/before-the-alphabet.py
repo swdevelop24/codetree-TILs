@@ -1,6 +1,6 @@
 arr=input()
 
 if arr == 'a':
-    print(z)
+    print('z')
 else:
     print(chr(ord(arr)-1))
