@@ -1,7 +1,7 @@
 a, b = input().split()
 
-alast = len(a)
-blast = len(b)
+alast = 0
+blast = 0
 
 # 첫 번째 숫자가 아닌 문자의 위치 찾기
 for x in range(len(a)):
