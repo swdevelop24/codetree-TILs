@@ -1,7 +1,7 @@
-arr=input()
-alen = len(arr) 
+arr=input() 
+L=len(arr)
 
 print(arr)
-for x in range(alen):
-    arr = arr[-1] + arr[0:-1]
+for x in range(L):
+    arr=arr[-1]+arr[:L-1]
     print(arr)
