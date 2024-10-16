@@ -8,7 +8,7 @@ total = list(str(total))
 
 temp = total[0]
 
-for i in range(len(total)):
+for i in range(1,len(total)):
     total[i-1] = total[i] 
 
 total[len(total)-1] = temp 
