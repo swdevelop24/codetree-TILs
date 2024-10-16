@@ -20,7 +20,7 @@ while True:
         break 
     
     # n이 len(arr)과 같아지면 회전을 중단
-    if n == len(arr):
+    if n == len(arr)+1:
         n = -1
         break
 
