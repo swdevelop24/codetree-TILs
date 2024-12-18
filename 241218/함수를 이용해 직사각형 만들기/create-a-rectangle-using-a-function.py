@@ -1,4 +1,4 @@
-n, m = map(int, input().split())
+n, m = tuple(map(int, input().split()))
 
 def print_rect(n, m):
     for _ in range(n):
