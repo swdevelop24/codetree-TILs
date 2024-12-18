@@ -1,11 +1,7 @@
-n, m = map(int, input().split())
+a, b = map(int, input().split())
 
-cnt=1 
-left=1
-right=1
-for i in range(1, max(n, m)+1):
-    if n % i == 0 and m % i == 0:
-        cnt*=i
-    
 
-print(cnt)
+for i in range(max(a, b), (a * b) + 1):
+    if i % a == 0 and i % b == 0:
+        print(i)
+        break
