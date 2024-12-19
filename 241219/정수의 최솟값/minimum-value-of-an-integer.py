@@ -4,4 +4,20 @@ def cal(*num):
     val = min(num)
     return val
 
+
+'''
+def get_min(a, b, c):
+    min_val = a
+    if min_val > b:
+        min_val = b
+    if min_val > c:
+        min_val = c
+
+    return min_val
+
+print(get_min(a, b, c))
+'''
+
+
+
 print(cal(a,b,c))
