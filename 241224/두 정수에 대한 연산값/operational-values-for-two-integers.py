@@ -7,6 +7,8 @@ def calc(a,b):
     else:
         b+=25
         a*=2 
-    print(a,b)
+    
+    return a, b
 
-calc(a,b)
+a,b = calc(a,b)
+print(a, b)
