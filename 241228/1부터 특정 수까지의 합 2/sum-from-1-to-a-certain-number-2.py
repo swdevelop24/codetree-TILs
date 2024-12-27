@@ -1,7 +1,7 @@
 n = int(input())
 
 def dfs(num):
-    if num ==0:
+    if num ==1:
         return num
     
     return dfs(num-1) + num
