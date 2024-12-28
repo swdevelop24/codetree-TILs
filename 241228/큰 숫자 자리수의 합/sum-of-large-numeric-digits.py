@@ -12,3 +12,8 @@ for x in arr:
     gop*=x
 
 print(dfs(gop))
+
+'''
+a, b, c = tuple(map(int, input().split()))
+print(dfs(a*b*c))
+''' 
